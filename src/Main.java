@@ -89,7 +89,8 @@ public class Main {
         }
     }
 public static void reversedLinkedList(){
-will i manage to take it localy on my machine - let see
+will i manage to take it localy on my machine - let see,
+    looks like i did
 }
 
 }
