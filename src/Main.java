@@ -88,7 +88,9 @@ public class Main {
             System.out.println(max);
         }
     }
-
+public static void reversedLinkedList(){
+will i manage to take it localy on my machine - let see
+}
 
 }
 
