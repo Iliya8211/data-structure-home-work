@@ -1,4 +1,6 @@
+import java.util.LinkedList;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +8,8 @@ public class Main {
         //twoDimensionArray(); // there a think are 3 rows and 4 columns exactly opposite of home work :)
         //another2DArray();
         //dynamic2DimensionalArray(); // from internet taken, i did understand the code, but will never write it on my own.
-        biggestElementInArray();
+        //biggestElementInArray();
+        reversedLinkedList();
     }
 
     public static void sumOfArrayElements() {
@@ -88,10 +91,18 @@ public class Main {
             System.out.println(max);
         }
     }
-public static void reversedLinkedList(){
-will i manage to take it localy on my machine - let see,
-    looks like i did
-}
+    public static void reversedLinkedList(){
+    LinkedList<Integer> cars = new LinkedList<>();
+    cars.add(1);
+    cars.add(2);
+    cars.add(3);
+    cars.add(4);
+    cars.addFirst(54);
+    cars.remove(0);
+    cars.removeLast();
+    cars.removeAll(cars);
+        System.out.println(cars);
+    }
 
 }
 
