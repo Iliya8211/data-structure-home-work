@@ -91,6 +91,7 @@ public class Main {
             System.out.println(max);
         }
     }
+
     public static void reversedLinkedList(){
     LinkedList<Integer> cars = new LinkedList<>();
     cars.add(1);
