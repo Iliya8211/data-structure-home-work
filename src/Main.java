@@ -1,3 +1,4 @@
+import java.nio.channels.ScatteringByteChannel;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -9,7 +10,8 @@ public class Main {
         //another2DArray();
         //dynamic2DimensionalArray(); // from internet taken, i did understand the code, but will never write it on my own.
         //biggestElementInArray();
-        reversedLinkedList();
+        //reversedLinkedList();
+        isStringIsPalindrome();
     }
 
     public static void sumOfArrayElements() {
@@ -98,12 +100,32 @@ public class Main {
     cars.add(2);
     cars.add(3);
     cars.add(4);
-    cars.addFirst(54);
-    cars.remove(0);
-    cars.removeLast();
-    cars.removeAll(cars);
-        System.out.println(cars);
+    System.out.println("Linked list of integers before revesrs" + cars);
+    for(int i = cars.size() -1;i >= 0;i--) {
+        System.out.println(i);
     }
+   }
 
-}
+   public static void isStringIsPalindrome(){
+       Scanner myString = new Scanner(System.in);
+       System.out.println("Please enter your word");
+       String obj = myString.next();
+       String str = obj, reverseStr = "";
+
+       int strLength = str.length();
+
+       for (int i = (strLength - 1); i >=0; --i) {
+           reverseStr = reverseStr + str.charAt(i);
+       }
+       if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
+           System.out.println(str + " is a Palindrome String.");
+       }
+       else {
+           System.out.println(str + " is not a Palindrome String.");
+       }
+   }
+
+
+   }
+
 
